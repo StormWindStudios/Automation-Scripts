@@ -1,5 +1,5 @@
 # Quickly configure basic settings on Windows Server 2016.
-# [Geared toward lab environments - make sure to update /files/vars.ps1 with your own details]
+# [Geared toward lab environments - make sure to update /files/variables.ps1 with your own details]
 #
 # Shane Sexton
 # 10 15 2019
