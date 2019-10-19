@@ -1,0 +1,16 @@
+# Credentials and domain name or IP of XenServer hypervisor
+
+xen_address: "10.0.1.128"
+admin_username: "root"
+admin_password: "Password1!"
+
+# List of machine names to manage
+xen_machines:
+  - "DC01 - 129"
+  - "LS01 - 131"
+  - "SQL01 - 133"
+  - "DDC01 - 130"
+  - "SF01 - 132"
+
+# Delay between actions (seconds)
+delay: 20

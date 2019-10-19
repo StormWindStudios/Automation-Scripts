@@ -1,0 +1,36 @@
+- name: Managing VM power.
+  connection: local
+  hosts: localhost
+  
+  # Hypervisor and VM information should be entered in this vars file
+  vars_files:
+    - xen_vars.yml
+  
+  # Prompt user for whether to bring systems up or down
+  vars_prompt: 
+  - name: power_state
+    prompt: "Which power state? (powered-on | shutdown-guest)"
+    private: no
+  
+  # Begin tasks section
+  tasks:
+
+  # Reverse list when powering down
+  - name: Reverse order when shutting donw
+    set_fact:
+      xen_machines: "{{ xen_machines | reverse | list }}"
+    when: power_state == "shutdown-guest"
+
+  # Loop through VMs applying the power state and pausing for specified period of time
+  - name: "Changing power states"
+    xenserver_guest_powerstate:
+      hostname: "{{ xen_address }}"
+      username: "{{ admin_username }}"
+      password: "{{ admin_password }}"
+      name: "{{ item }}"
+      state: "{{ power_state }}"
+    loop: "{{ xen_machines }}"
+    loop_control:
+      pause: "{{ delay }}"
+
+
