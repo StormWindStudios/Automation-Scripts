@@ -1,3 +1,8 @@
+# Quickly configure basic settings on Windows Server 2016.
+# [Geared toward lab environments]
+#
+# Shane Sexton
+# 10 15 2019
 . (Join-Path $PSScriptRoot "\Files\Variables.ps1") 
 . (Join-Path $PSScriptRoot "\Files\Functions.ps1")
 
@@ -28,4 +33,4 @@ foreach ($service in $services) {
 
 Write-Host Disabling IE Enhanced Security Configuration -Foregroundcolor Green
 Disable-ieESC
-
+Write-Host `tDone.
