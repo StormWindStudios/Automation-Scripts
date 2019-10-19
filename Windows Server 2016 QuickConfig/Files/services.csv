@@ -1,0 +1,46 @@
+Full Name,Name
+ActiveX Installer,AxInstSV
+Alljoyn Router Service,AJRouter
+Application Layer Gateway Service,ALG
+Bluetooth Support Service,bthserv
+CDPUserSvc,CDPUserSvc
+Contact Data,PimIndexMaintenanceSvc
+dmwappushsvc,dmwappushservice
+Downloaded Maps Manager,MapsBroker
+Geolocation Service,lfsvc
+Internet Connection Sharing ICS,SharedAccess
+Link-Layer Topology Discovery Mapper,lltdsvc
+Microsoft Account Sign-in Assistant,wlidsvc
+Microsoft Passport,NgcSvc
+Microsoft Passport Container,NgcCtnrSvc
+Network Connection Broker,NcbService
+Network Connectivity Assistant,NcaSvc
+Phone Service,PhoneSvc
+Print Spooler,Spooler
+Printer Extensions and Notifications,PrintNotify
+Program Compatibility Assistant Service,PcaSvc
+Quality Windows Audio Video Experience,QWAVE
+Radio Management Service,RmSvc
+Sensor Data Service,SensorDataService
+Sensor Monitoring Service,SensrSvc
+Sensor Service,SensorService
+Shell Hardware Detection,ShellHWDetection
+Smart Card Device Enumeration Service,ScDeviceEnum
+SSDP Discovery,SSDPSRV
+Still Image Acquisition Events,WiaRpc
+Sync Host,OneSyncSvc
+Touch Keyboard and Handwriting Panel Service,TabletInputService
+UPnP Device Host,upnphost
+User Data Access,UserDataSvc
+User Data Storage,UnistoreSvc
+WalletService,WalletService
+Windows Audio,Audiosrv
+Windows Audio Endpoint Builder,AudioEndpointBuilder
+Windows Camera Frame Server,FrameServer
+Windows Image Acquisition WIA,stisvc
+Windows Insider Service,wisvc
+Windows Mobile Hotspot Service,icssvc
+Windows Push Notifications System Service,WpnService
+Windows Push Notifications User Service,WpnUserService
+Xbox Live Auth Manager,XblAuthManager
+Xbox Live Game Save,XblGameSave
