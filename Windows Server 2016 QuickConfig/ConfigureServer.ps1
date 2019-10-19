@@ -1,11 +1,13 @@
 # Quickly configure basic settings on Windows Server 2016.
-# [Geared toward lab environments]
+# [Geared toward lab environments - make sure to update /files/vars.ps1 with your own details]
 #
 # Shane Sexton
 # 10 15 2019
+#
+#
+
 . (Join-Path $PSScriptRoot "\Files\Variables.ps1") 
 . (Join-Path $PSScriptRoot "\Files\Functions.ps1")
-
 
 
 Write-Host `nChanging hostname -ForegroundColor Green
