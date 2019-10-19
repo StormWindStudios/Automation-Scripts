@@ -1,8 +1,11 @@
 #!/bin/bash
+#
 # This script automates the installation of VirtualBox for Debian-based systems.
 #
 # Shane Sexton
 # 10 10 2019
+#
+
 
 # Variables
 LOG_FILE="install.log"
@@ -78,7 +81,7 @@ install_virtualbox () {
 
   # Make sure the key is successfully acquired
   if [ -f $KEY_NAME ]; then
-    echo "Key aquired. Adding key." | tee -a $LOG_FILE
+    echo "Key acquired. Adding key." | tee -a $LOG_FILE
     apt-key add $KEY_NAME
   elif [ ! -f $KEY_NAME ]; then
     echo "Failed to get key..." | tee -a $LOG_FILE
