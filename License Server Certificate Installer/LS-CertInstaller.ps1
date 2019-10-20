@@ -1,10 +1,15 @@
-﻿# Citrix License Server Certificate Installer
+# Citrix License Server Certificate Installer
 # 
 # Shane Sexton
 # 10 19 2019
 #
 # Install your exported .pfx file directly to the license server
 #
+#
+
+#################
+##  Variables  ##
+#################
 
 # Citrix Directories
 $LSDIR = "C:\Program Files (x86)\Citrix\Licensing\LS\conf"
@@ -17,6 +22,12 @@ $OPENSSL_DEST = Join-Path $PSScriptRoot "OpenSSL\"
 # Directory for new cert and key, and another directory for backups
 $NEW_DIR = Join-Path $PSScriptRoot "New"
 $BACKUP_DIR = Join-Path $PSScriptRoot "Backup"
+
+
+#################
+##  Functions  ##
+#################
+
 
 # Back up certificates and keys
 function Backup-Certs ($LSPath, $BUPath, $type) {
@@ -257,6 +268,12 @@ function Test-LSConnection () {
     Start-Sleep -Seconds 1.5
   }
 }
+
+
+#################
+##  Main Body  ##
+#################
+
 
 Write-Host "`nCitrix License Server Certificate Installer." -ForegroundColor Cyan
 Write-Host "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-`n`n" -ForegroundColor DarkCyan
